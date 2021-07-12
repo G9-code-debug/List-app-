@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <title>List app</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <ul id="ul" class="ul-responsive">
+            <li> <a href="#a">Submit Section</a> </li>
+            <br>
+            <li> <a href="#b">Sort Section</a></li>
+            <br>
+            <li> <a href="#c">Search Section</a> </li>
+        </ul>
+        <center>
+            <h1 id="h1">No. of components in the list = 0</h1>
+            <br>
+            <section id="a">
+            <hr>
+            <input type="button" id="on" value="Autosave on" onclick="on()">
+            <input type="button" id="off" value="Autosave off" onclick="off()">
+            <br>
+            <label id="autoSave">Autosave is off</label>
+            <hr>
+        <div>
+            <input type="search" id="input1" style="width: 400px; height: 30px;" placeholder="Kindly Enter The Name You Want To Add To The List">
+            <br>
+            <input type="button" id="button1" value="Submit" onclick="submit()" contenteditable="true">
+            <div id="list">
+
+            </div>
+        </section>
+        <hr>
+        <section id="b">
+            <input type="button" id="sort" value="Sort Alphabetically" onclick="sort()">
+            <div id="sortedlist">
+
+            </div>
+        </section>
+            <hr>
+        <section id="c">
+            <input type="search" id="searchinput" placeholder="Enter the name you want to search">
+            <br>
+            <input type="button" id="searchbutton" value="Search" onclick="search()">
+            <br>
+            <label id="searchresult"></label>
+        </div>
+        <hr>
+        <button class="ibox" id="save_button" onclick="save()">Save</button>
+        <button class="ibox" id="load_button" onclick="load()">Load</button>
+    </section>
+</body>
+        </center> 
+</html>
